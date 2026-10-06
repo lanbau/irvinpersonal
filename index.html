@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Irvin Lin — AI Platforms & Security Engineer</title>
+  <meta name="description" content="Irvin Lin Lijie — Lead Software Engineer building AI agents, RAG pipelines and secure platforms in Singapore." />
+  <meta name="theme-color" content="#05070d" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="progress" aria-hidden="true"><span id="progress-bar"></span></div>
+  <canvas id="network" aria-hidden="true"></canvas>
+  <div class="cursor-glow" aria-hidden="true"></div>
+
+  <header class="nav">
+    <a href="#top" class="logo">&lt;irvin.lin /&gt;</a>
+    <nav>
+      <a href="#about" data-nav>About</a>
+      <a href="#skills" data-nav>Stack</a>
+      <a href="#experience" data-nav>Experience</a>
+      <a href="#contact" data-nav>Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <p class="mono kicker"><span class="dot"></span> system.online — Singapore</p>
+      <h1 class="glitch" data-text="Irvin Lin">Irvin Lin</h1>
+      <p class="hero-role mono">
+        <span class="prompt">$</span> <span id="typed"></span><span class="caret">▍</span>
+      </p>
+      <p class="hero-sub">
+        Lead Software Engineer building AI agents, RAG pipelines and tool-calling APIs —
+        and putting real governance around who can see what data.
+      </p>
+      <div class="hero-cta">
+        <a class="btn primary" href="#experience">View experience</a>
+        <a class="btn ghost" href="#contact">Get in touch</a>
+      </div>
+      <a href="#about" class="scroll-hint mono" aria-label="Scroll down">
+        <span>scroll</span><i></i>
+      </a>
+    </section>
+
+    <!-- ABOUT / STATS -->
+    <section id="about" class="section">
+      <h2 class="section-title reveal"><span class="mono">01.</span> About</h2>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>
+            I'm a lead engineer with a decade of production software delivery. Today I build
+            AI agents, RAG pipelines and MCP-based tool-calling APIs in Python and TypeScript
+            on sensitive financial data at <strong>Vertex Ventures</strong> (Temasek-backed).
+          </p>
+          <p>
+            When the Head of Technology left, I took over the firm's technology function —
+            owning IT and cybersecurity decisions for ~100 staff. Before that I spent 5+ years
+            at <strong>Oracle Cloud Infrastructure</strong> leading a team on Java Management
+            Service for enterprise customers including banks and hotels.
+          </p>
+          <p class="highlight">
+            I like turning loosely defined requirements into a technical design, shipping it to
+            production, and locking down access to the data underneath.
+          </p>
+        </div>
+        <div class="stats">
+          <div class="stat reveal"><b data-count="10">0</b><span>years shipping production software</span></div>
+          <div class="stat reveal"><b data-count="100" data-prefix="~">0</b><span>staff whose IT &amp; security I owned</span></div>
+          <div class="stat reveal"><b data-count="8" data-prefix="7–">0</b><span>engineers led at Oracle</span></div>
+          <div class="stat reveal"><b data-count="5" data-suffix="+">0</b><span>years on Oracle Cloud Infrastructure</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+      <h2 class="section-title reveal"><span class="mono">02.</span> Stack</h2>
+      <div class="skills-grid">
+        <article class="card tilt reveal">
+          <div class="card-head mono"><span>ai_engineering</span><em>.py</em></div>
+          <ul class="tags">
+            <li>LangChain</li><li>LangGraph</li><li>RAG pipelines</li><li>Agentic workflows</li>
+            <li>MCP server design</li><li>Tool / function-calling</li><li>Prompt-injection defence</li>
+            <li>Anthropic API</li><li>Evaluation &amp; observability</li>
+          </ul>
+        </article>
+        <article class="card tilt reveal">
+          <div class="card-head mono"><span>security_governance</span><em>.yaml</em></div>
+          <ul class="tags">
+            <li>GCP IAM</li><li>Least-privilege access</li><li>Audit alerting</li>
+            <li>Data segregation</li><li>Vendor risk review</li><li>Data-sharing risk</li>
+          </ul>
+        </article>
+        <article class="card tilt reveal">
+          <div class="card-head mono"><span>languages</span><em>.ts</em></div>
+          <ul class="tags">
+            <li>Python</li><li>TypeScript</li><li>JavaScript (ES6)</li><li>SQL</li>
+          </ul>
+        </article>
+        <article class="card tilt reveal">
+          <div class="card-head mono"><span>data_backend</span><em>.sql</em></div>
+          <ul class="tags">
+            <li>PostgreSQL (Supabase)</li><li>Node.js</li><li>Next.js</li><li>REST APIs</li>
+          </ul>
+        </article>
+        <article class="card tilt reveal">
+          <div class="card-head mono"><span>cloud</span><em>.tf</em></div>
+          <ul class="tags">
+            <li>Oracle Cloud Infrastructure</li><li>Google Cloud Platform</li>
+          </ul>
+        </article>
+        <article class="card tilt reveal">
+          <div class="card-head mono"><span>delivery</span><em>.yml</em></div>
+          <ul class="tags">
+            <li>Git</li><li>CI/CD</li><li>Cypress</li><li>Selenium</li>
+            <li>Agile / Scrum</li><li>Code review</li><li>Mentoring</li>
+          </ul>
+        </article>
+      </div>
+
+      <div class="marquee reveal" aria-hidden="true">
+        <div class="marquee-track mono">
+          <span>agents</span><span>rag</span><span>mcp</span><span>iam</span><span>least-privilege</span>
+          <span>langgraph</span><span>typescript</span><span>python</span><span>supabase</span><span>observability</span>
+          <span>agents</span><span>rag</span><span>mcp</span><span>iam</span><span>least-privilege</span>
+          <span>langgraph</span><span>typescript</span><span>python</span><span>supabase</span><span>observability</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section">
+      <h2 class="section-title reveal"><span class="mono">03.</span> Experience</h2>
+
+      <div class="timeline">
+        <div class="timeline-line"><span id="timeline-fill"></span></div>
+
+        <article class="job reveal">
+          <div class="job-node"></div>
+          <div class="job-meta mono">Jul 2026 — Present · Singapore</div>
+          <h3>Lead Software Engineer <span>@ Vertex Ventures</span></h3>
+          <p class="job-sub">Temasek-backed venture capital · AI platforms &amp; security</p>
+
+          <div class="job-block">
+            <h4 class="mono">// acting_technology_lead <small>Aug–Oct 2026</small></h4>
+            <ul>
+              <li>Took over the firm's entire technology function after the Head of Technology resigned — owning IT and cybersecurity for ~100 people, reporting to the Managing Director.</li>
+              <li>Led a review of Google Cloud organisation access after IT admins were found to see sensitive data firm-wide; designed least-privilege and monitoring controls.</li>
+              <li>Introduced audit alerting so stakeholders are notified whenever the HR database is accessed, making privileged access visible.</li>
+              <li>Assessed segregating compliance data into a separate database; reviewed vendor scope and data-resale risk in a proposed third-party data-sharing deal.</li>
+              <li>Kept platform delivery on track through the leadership transition.</li>
+            </ul>
+          </div>
+
+          <div class="job-block">
+            <h4 class="mono">// platform_engineering</h4>
+            <div class="feature-grid">
+              <div class="feature">
+                <span class="mono">Vertex Labs</span>
+                <p>In-house platform for deal sourcing and portfolio management, used by investment teams across the SEA and India fund. Authored the roadmap to turn it into multi-tenant SaaS for other funds.</p>
+              </div>
+              <div class="feature">
+                <span class="mono">VAL · MCP server</span>
+                <p>Internal API layer exposed as an MCP server so LLM agents can create and enrich CRM records. Redesigned tool schemas to cut redundant discovery calls and added prompt-injection filtering on write actions.</p>
+              </div>
+              <div class="feature">
+                <span class="mono">Agents &amp; RAG</span>
+                <p>Agentic workflows and RAG pipelines in Python and TypeScript over proprietary deal, people and portfolio data.</p>
+              </div>
+              <div class="feature">
+                <span class="mono">TalentTrek</span>
+                <p>Extending the in-house HR platform with appraisal scorecards, training and a compliance module.</p>
+              </div>
+            </div>
+            <p class="stack mono">Python · TypeScript · Next.js · Node.js · Supabase · LangChain · LangGraph · Anthropic API</p>
+          </div>
+        </article>
+
+        <article class="job reveal">
+          <div class="job-node"></div>
+          <div class="job-meta mono">Jan 2021 — May 2026 · 5 yrs 4 mos</div>
+          <h3>Senior Member of Technical Staff <span>@ Oracle</span></h3>
+          <p class="job-sub">Oracle Cloud Infrastructure · Frontend Lead, Java Management Service</p>
+          <ul>
+            <li>Led a team of 7–8 engineers building Java Management Service, an OCI service that inventories and manages Java runtimes across enterprise estates.</li>
+            <li>Owned delivery end to end, from design through production on a cloud platform with strict security and compliance requirements.</li>
+            <li>Delivered for enterprise customers including banks and hotels.</li>
+            <li>Set architecture, code-review and testing standards; mentored junior engineers and shortened onboarding.</li>
+            <li>Drove component reuse and performance optimisation across the service's frontend.</li>
+          </ul>
+        </article>
+
+        <article class="job reveal">
+          <div class="job-node"></div>
+          <div class="job-meta mono">Sep 2019 — Dec 2020</div>
+          <h3>Senior Developer <span>@ Dolphin Dynamics Labs</span></h3>
+          <ul>
+            <li>Led development of a mining-safety application used by Rio Tinto in field environments; mentored a team of junior developers.</li>
+          </ul>
+        </article>
+
+        <article class="job reveal">
+          <div class="job-node"></div>
+          <div class="job-meta mono">Jun 2019 — Aug 2019</div>
+          <h3>Full Stack Developer <span>@ Palo IT</span></h3>
+          <ul>
+            <li>Built a proof of concept for SMRT and an internal onboarding tool.</li>
+          </ul>
+        </article>
+
+        <article class="job reveal">
+          <div class="job-node"></div>
+          <div class="job-meta mono">Jan 2017 — Dec 2018</div>
+          <h3>Full Stack Developer <span>@ Paula's Choice Skincare</span></h3>
+          <ul>
+            <li>Built the e-commerce storefront and a point-of-sale system for the physical shop.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section class="section">
+      <h2 class="section-title reveal"><span class="mono">04.</span> Education &amp; Certs</h2>
+      <div class="certs">
+        <div class="cert reveal"><span class="mono">2015</span><p>Bachelor of Computer Science<br /><small>Nanyang Technological University</small></p></div>
+        <div class="cert reveal"><span class="mono">2022</span><p>OCI Certified Architect Associate<br /><small>Oracle</small></p></div>
+        <div class="cert reveal"><span class="mono">2021</span><p>OCI Foundations Certified Associate<br /><small>Oracle</small></p></div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact">
+      <h2 class="section-title reveal"><span class="mono">05.</span> Contact</h2>
+      <div class="terminal reveal">
+        <div class="terminal-bar"><i></i><i></i><i></i><span class="mono">~/irvin — zsh</span></div>
+        <pre class="mono" id="terminal-body"></pre>
+      </div>
+      <a class="btn primary big reveal" href="mailto:irvinln@gmail.com">irvinln@gmail.com</a>
+    </section>
+  </main>
+
+  <footer class="mono">© <span id="year"></span> Irvin Lin Lijie · built with vanilla JS &amp; a lot of coffee</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
